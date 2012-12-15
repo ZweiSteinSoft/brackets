@@ -5,6 +5,7 @@ With this file we want to provide some general guidance how to contribute to Bra
 
 Issues starting Brackets the first time? Please review the [Troubleshooting Page](https://github.com/adobe/brackets/wiki/Troubleshooting).         
 
+
 ## Getting Started
 
 Before you start coding, post to the [brackets-dev Google group](http://groups.google.com/group/brackets-dev) or the [#brackets IRC channel on freenode](http://freenode.net) about what you're thinking of working on, so you can get early feedback. 
@@ -31,12 +32,12 @@ Before submitting any pull request, make sure to:
 1. run the unit tests with Debug > Run Tests -- everything should pass
 1. if your change is nontrivial or might have affected the UI, run through the [Brackets smoke tests](Brackets-Smoke-Tests) and possibly the [Brackets server smoke tests](Brackets-Server-Smoke-Tests).
 
-###Proposed Pull Request checklist
+### Proposed Pull Request checklist
 
 * Does this change belong in core? Some features would be better as an extension - could it be done as an extension by separating out a more limited set of core changes (e.g. more generic APIs)?
 * Some pull requests require the core team to implement additional supporting code in order to work. These pull requests may be delayed until the core team has time to do that work.
 * Any major architectural or UI changes have been discussed in the forum?
-* All new APIs are documented in the [Release Notes] (https://github.com/adobe/brackets/wiki/Release-Notes)?
+* All new APIs are documented in the [Release Notes](https://github.com/adobe/brackets/wiki/Release-Notes)?
 * Code follows our JS coding style guidelines (we probably need to clean those up)
 * Code passes JSLint
 * Code is syntactically valid (Brackets launches & no exceptions in the console)
@@ -52,12 +53,13 @@ Before submitting any pull request, make sure to:
 * Native: Mac AND Win implementations
 * UI is reasonably polished ?
 
-###Avoid Common pitfalls
+### Avoid Common pitfalls
 (make sure these have been thought about):
 * Text manipulation commands: should consider what happens when in an inline editor at boundaries
 * Inline editors: does this collide with any other providers?
 * Code hinting: does this collide with any other providers?
  
-##Additional Resources
+ 
+## Additional Resources
 
 * [the Brackets github issue tracker](https://github.com/adobe/brackets/issues)
